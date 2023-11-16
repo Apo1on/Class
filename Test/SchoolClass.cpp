@@ -1,30 +1,29 @@
-﻿
+﻿// author: Евгений Афанасьев
+#include "SchoolClass.h"
 #include <iostream>
 #include <string>
 using namespace std;
-class SchoolClass { 
-    public:
-        
-        string GetFullInfo()
+        string SchoolClass::GetFullInfo() const
         {
-            string Information = "Это " + to_string(ClassNumber) + to_string(ClassLetter) + " класс в котором учится " + to_string(StudentCount) + " человек";
+            string Information = "Это " + to_string(ClassNumber) + ClassLetter + " класс в котором учится " + to_string(StudentCount) + " человек";
             return Information;
 
         };
-        string SetClassNumber(char a)
+        void SchoolClass::SetClassNumber(int a)
         {
-            char let;
-            if ('1' <= a && a <= '11')
+            if (a >= 1)
             {
-                ClassNumber = a;
+                if (a <= 11) { ClassNumber = a; }
+                else { ClassNumber = 11; }
             }
-            else { return "Введите значение от 1 до 11"; };
-              
+            else { ClassNumber = 1; }
         };
-    private:
-        char ClassLetter; // буква класса // запихать в прайват
-        char ClassNumber; // Цифра класса  // getNumber
-        int StudentCount; // Количество учеников // getNumber
-        string ClassroomTeacher; // Классный руководитель
-};
-
+        void SchoolClass::SetClassLetter(char* a)
+        {
+            if (a[1] < 'а')
+            {
+                if (a[1] > 'я') { ClassLetter = 'я'; }
+                else { ClassLetter = a[1]; }
+            }
+            else { ClassLetter = 'а'; }
+        };

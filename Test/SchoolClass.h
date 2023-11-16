@@ -1,15 +1,18 @@
+// author: Евгений Афанасьев
 #pragma once
 #include <iostream>
 #include <string>
 using namespace std;
 class SchoolClass {
+    
+    private:
+    string ClassLetter; // буква класса // запихать в прайват
+    int ClassNumber; // Цифра класса  // getNumber
+    int StudentCount; // Количество учеников // getNumber
+    string ClassroomTeacher; // Классный руководитель
 	public:
        
-        string GetFullInfo(){}
-        string SetClassNumber(char a){}
-    private:
-        char ClassLetter; // буква класса // запихать в прайват
-        char ClassNumber; // Цифра класса  // getNumber
-        int StudentCount; // Количество учеников // getNumber
-        string ClassroomTeacher; // Классный руководитель
+        string GetFullInfo() const;
+        void SetClassNumber(int a);
+        void SetClassLetter(char* a);
 };
