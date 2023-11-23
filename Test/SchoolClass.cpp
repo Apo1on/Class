@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+   
         string SchoolClass::GetFullInfo() const
         {
             string Information = "Это " + to_string(ClassNumber) + ClassLetter + " класс в котором учится " + to_string(StudentCount) + " человек";
@@ -18,12 +19,32 @@ using namespace std;
             }
             else { ClassNumber = 1; }
         };
-        void SchoolClass::SetClassLetter(char* a)
+        void SchoolClass::SetClassLetter(char a)
         {
-            if (a[1] < 'а')
-            {
-                if (a[1] > 'я') { ClassLetter = 'я'; }
-                else { ClassLetter = a[1]; }
-            }
-            else { ClassLetter = 'а'; }
+            
         };
+        void SchoolClass::SetStudentCount(int a)
+        {
+            if (a >= 1)
+            {
+                if (a <= 41) { StudentCount = a; }
+                else { StudentCount = 41; }
+            }
+            else { StudentCount = 1; }
+        };
+        void SchoolClass::SetClassroomTeacher(string a)
+        {
+
+        };
+        int SchoolClass::GetClassNumber() const
+        {
+            return ClassNumber;
+        }
+        string SchoolClass::GetClassLetter() const
+        {
+            return ClassLetter;
+        }
+        int SchoolClass::GetStudentCount() const
+        {
+            return StudentCount;
+        }
