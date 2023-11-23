@@ -3,7 +3,13 @@
 #include <iostream>
 #include <string>
 using namespace std;
-   
+        SchoolClass::SchoolClass()
+        {
+            ClassLetter = 'а';
+            ClassNumber = 1;
+            StudentCount = 21;
+            ClassroomTeacher = "Имя фамилия";
+        }
         string SchoolClass::GetFullInfo() const
         {
             string Information = "Это " + to_string(ClassNumber) + ClassLetter + " класс в котором учится " + to_string(StudentCount) + " человек";

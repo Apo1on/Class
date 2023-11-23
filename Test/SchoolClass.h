@@ -6,12 +6,12 @@ using namespace std;
 class SchoolClass {
     
     private:
-    string ClassLetter; // буква класса // запихать в прайват
-    int ClassNumber; // Цифра класса  // getNumber
-    int StudentCount; // Количество учеников // getNumber
+    string ClassLetter; // буква класса 
+    int ClassNumber; // Цифра класса 
+    int StudentCount; // Количество учеников 
     string ClassroomTeacher; // Классный руководитель
 	public:
-        
+        SchoolClass();
         string GetFullInfo() const;
         void SetClassNumber(int a);
         void SetStudentCount(int a);
