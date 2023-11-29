@@ -27,5 +27,6 @@
     
 # UML SchoolClass
 
-![UML](https://github.com/Apo1on/Class/assets/147008115/7cbd5278-9a53-48c6-9545-eb9d7f14185a)
+![названия drawio](https://github.com/Apo1on/Class/assets/147008115/5ccf9d4f-01c0-4a27-8a7a-01cf6a1e5c8f)
+
 
