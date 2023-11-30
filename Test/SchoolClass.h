@@ -11,13 +11,24 @@ class SchoolClass {
     int StudentCount; //  оличество учеников 
     string ClassroomTeacher; //  лассный руководитель
 	public:
+        // стандартные значени€
         SchoolClass();
-        string GetFullInfo() const;
+        // ¬ыводит всю информацию ввиде строки
+        string ToString() const;
+        // ”становка номера класса
         void SetClassNumber(int a);
+        // ”становка количество студентов
         void SetStudentCount(int a);
+        // ”становка имени учител€
         void SetClassroomTeacher(string a);
+        // ”становка имени класса
         void SetClassLetter(char a);
+        // возврат значени€ номера класса
         int GetClassNumber() const;
+        // возврат значени€ буква класса
         string GetClassLetter() const;
+        // возврат значени€ количество учеников
         int GetStudentCount() const;
+        // увеличить значение учеников
+        void AddToStudentCount(int a);
 };
