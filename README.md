@@ -37,6 +37,6 @@
 
 # UML SchoolClass
 
-![названия drawio](https://github.com/Apo1on/Class/assets/147008115/5ccf9d4f-01c0-4a27-8a7a-01cf6a1e5c8f)
+![SWAS drawio](https://github.com/Apo1on/Class/assets/147008115/a2ed23c4-a36e-4665-97b6-7acb1d572ca0)
 
 
